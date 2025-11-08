@@ -1,0 +1,83 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Student Feedback Survey</h1>
+
+    <p id="description">
+      Please take a few moments to fill out this survey and help us improve our courses.
+    </p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label><br />
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      /><br /><br />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label><br />
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label><br />
+      <input
+        id="number"
+        type="number"
+        min="10"
+        max="99"
+        placeholder="Enter your age"
+      /><br /><br />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Which course are you enrolled in?</label><br />
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="web-dev">Web Development</option>
+        <option value="data-science">Data Science</option>
+      </select><br /><br />
+
+      <!-- Radio buttons -->
+      <p>Would you recommend this course to others?</p>
+      <label><input type="radio" name="recommend" value="yes" /> Yes</label><br />
+      <label><input type="radio" name="recommend" value="no" /> No</label><br /><br />
+
+      <!-- Checkboxes -->
+      <p>What did you like most about the course? (Select all that apply)</p>
+      <label><input type="checkbox" value="projects" /> Projects</label><br />
+      <label><input type="checkbox" value="instructors" /> Instructors</label><br />
+      <label><input type="checkbox" value="community" /> Community</label><br /><br />
+
+      <!-- Textarea -->
+      <label for="comments">Any additional comments?</label><br />
+      <textarea
+        id="comments"
+        rows="4"
+        cols="40"
+        placeholder="Write your feedback here..."
+      ></textarea><br /><br />
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+
+** end of index.html **
+
